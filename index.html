@@ -1,47 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Developer Portfolio</title>
+    <title>JoelCupeles Portfolio Website</title>
+    <link rel= "stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="Assets/style.css">
+
+
+
   </head>
   <body>
-    <!-- Header section -->
     <header>
-      <h1>Joel Cupeles</h1>
-      <img src="avatar.jpg" alt="Developer Photo">
-      <!-- Navigation -->
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <button class="nav-toggle" aria-lable="toggle navigation">
+        <span class="hambuger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__items"><a href="#services" class="nav__links">My services</a></li>
+          <li class="nav__items"><a href="#about" class="nav__links">About Me</a></li>
+          <li class="nav__items"><a href="#work" class="nav__links">My Work</a></li>
+        </ul> 
       </nav>
     </header>
 
-    <!-- About section -->
-    <section id="about">
-      <h2>About</h2>
-      <!-- Add content here -->
+    <!--Introuctdtion -->
+    <section class="intro" id="home">
+      <h1 class="section__tittle section__subttile--intro">
+        Hi, I am <strong>Joel Cupeles</strong>
+      </h1>
+      <p class="section__subttile section__subttile--intro"> New front-end dev</p>
+      <img src="Assets/PictureofMe-1.jpg" alt="Picture of Joel Cupeles looking to the sky">
     </section>
 
-    <!-- Work section -->
-    <section id="work">
-      <h2>Work</h2>
-      <!-- Add images of developer's applications here -->
-      <img src="" alt="Application 1" id="app1" class="large-image">
-      <img src="" alt="Application 2">
-      <img src="" alt="Application 3">
-      <!-- Add JavaScript here to make the first image larger -->
+    <section class="my-services" id="services">
+      <h2 class="section__tittle section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web Devlopment</h3>
+          <p>Web development is a process of creating and designing websites. 
+             It involves various aspects such as website design, content creation, user experience, and functionality.
+             As a web development service provider, I offer our clients the ability to bring their ideas to life by creating custom websites tailored to their specific needs.</p>
+        </div>
+
+        <div class="service">
+          <h3>Finance</h3>
+          <p>As a finance undergraduate student, I offer a range of financial services designed to help individuals and businesses manage their finances effectively. 
+            My services include financial planning, investment management, budgeting, and risk management. 
+            I have a deep understanding of financial markets, investment strategies, and financial instruments, which allows me to provide my clients with the right advice to help them achieve their financial goals. 
+            Whether you're an individual looking to save for retirement, or a business owner looking to grow your company, 
+            I have the knowledge and experience to help you succeed.</p>
+        </div>
+
+        <div class="service">
+          <h3>Future Services</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      
+      </div>
+
+      <a href="#work" class="btn"> My Work</a>
     </section>
 
-    <!-- Contact section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <!-- Add content here -->
+    <!--About Me Section-->
+    <section class="about-me" id="about">
+      <h2 class="section__tittle section__tittle--about">About Me</h2>
+      <p class="section__subttile section__subttile--about">
+        Hello, my name is Joel Cupeles and I am 24 years old. I hail from Puerto Rico where 
+        I obtained my Bachelor's degree in Finance from the University of Puerto Rico. 
+        I am passionate about discovering innovative solutions to challenges and exceeding expectations. 
+        I am currently enrolled in the Washington University web development bootcamp to further expand my skills and challenge myself. 
+        I am well-versed in multiple programming languages and have a strong comprehension of both English and Spanish. 
+        Regardless of the complexity of the task, I am committed to utilizing my skills and abilities to deliver results.
+      </p>
+      <div class="about-me__body">
+        <p></p>
+        <p></p>
+      </div>
+
+      <img src="Assets/about me.jpeg" alt="Joel in front of a car">
     </section>
+
+    <!--My work section-->
+    <section class="my-work" id="work">
+      <H2 class="section__tittle section__tittle--work">My work</H2>
+      <p section="section__subttile"></p>
+     
+      <!--Portafolio pictures-->
+      <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+       <!--Portafolio pictures-->
+       <div class="portafolio">
+        <a href="#" class="portfolio__item"></a>
+          <img src="Assets/Horiseon Updated.png" alt="" class="portfolio__img">
+      </div>
+
+    </section>
+
+    <footer>
+      <a href="malito:joel.cupeles1998@gmail.com" class="footer__links">joel.cupeles1998@gmail.com</a>
+      <ul class="social__list">
+        <li class="social-list__items"><a class="social-list__link">A</a></li>
+        <li class="social-list__items"><a class="social-list__link">b</a></li>
+        <li class="social-list__items"><a class="social-list__link">C</a></li>
+      </ul>
+    </footer>
+
   </body>
 </html>
