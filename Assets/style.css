@@ -1,34 +1,218 @@
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
-/* Custom properties */
 :root {
-    --ff-primaary: 'Source Sans Pro', sans-serif;
-    --sendondary: 'Source Code Pro', monospace;
+  --white: #ffffff;
+  --cornflower-blue: #0071c5;
+  --vibrant-red: #ed1c24;
+  --bright-orange: #f26522;
+  --sunny-yellow: #ffc20e;
+  --cool-gray: #7f7f7f;
+  --light-teal: #6fbfb2;
+  --dark-gray: #4c4c4c;
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+  --tertiary-font: 'Montserrat', sans-serif;
+  --fs-h1: 3rem;
+  --fs-h2: 2.2rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px){
+  :root{
+    --fs-h1:4.5;
+    --fs-h2: 3.7rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem
+  }
+}
+
+/* General Styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--white);  
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  
+  
+}
+
+section {
+  padding: 5em 2em;
+}
+/* Header section styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--primary-font);
+  background-color: var(--light-teal);
+  color: #ffffff; 
+  padding: 10px;
+}
+/* H1 styles in header section */
+.header h1 {
+  font-size: 3rem;
+  margin: 1rem
+  ;
+}
+
+/* Styles for the nav in the header section */
+/* Change div to navigation bar (nav) in header section */
+.navbar-links {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+/* Styles for the unordered list in the nav in the header section */
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* Styles for the list items in the unordered list in the nav in the header section */
+.navbar-links li {
+  list-style: none;
+  
+}
+/* Styles for the links */
+.navbar-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  font-size: var(--fs-h3);
+}
+/* Styles for the paragraphs */
+.navbar-links li:hover {
+  background-color:  var(--dark-gray);
+}
+.hero {
+  height: 380px;
+  width: 100%;
+  margin-bottom: -50px;
+  background-image: url("../Assets/background.png");
+  background-size: cover;
+  background-position: center;
+}
 
 
-    --fw-reg:300;
-    --fw-bold: 900;
 
-    --clr-ligth: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+/*Topography*/
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem; 
+.section__subtitle--about {
+  background-color: var(--light-teal);
+  font-family: var(--primary-font);
 
 }
 
-@media (min-width:800px) {    
-    :root {
-        --fs-h1: 4.5;
-        --fs-h2: 3.7rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem
-
-    }
+h1, h2, h3 {
+  line-height: 1.1;
+  margin: 0;
 }
+
+h1 {font-family: var(--fs-h1);}
+h2 {font-family: var(--fs-h2);}
+h3 {font-family: var(--fs-h3);}
+
+
+
+  
+.header {
+      flex-direction: column;
+      align-items: center;
+  }
+.header h1 {
+      margin-bottom: 1rem;
+  }
+/*About Me styles*/
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas: 
+          "title img"
+          "subtitle img"
+          "text img";
+      grid-column-gap: 2em;
+  }
+  
+  .section__title--about {
+      grid-area: title;
+  }
+  
+  .section__subtitle--about {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 2em);
+      padding-left: 1em;
+      padding-right: calc(200px + 4em);
+  }
+  
+  .about-me__img {
+      grid-area: img;
+      position: relative;
+      z-index: 2;
+  }
+}
+
+
+  /* My Work Section*/
+
+  .my-work {
+    background-color: var(--light-teal);
+    color: var(--white);
+    text-align: center;    
+}
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+  .portfolio__item {
+    background: var(--light-teal);
+    overflow: hidden;
+}
+
+  .portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+  .portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+  .portfolio__img:hover,
+  .portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+
