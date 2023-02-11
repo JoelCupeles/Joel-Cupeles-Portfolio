@@ -1,9 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
 :root {
   --white: #ffffff;
-  --cornflower-blue: #0071c5;
-  --vibrant-red: #ed1c24;
-  --bright-orange: #f26522;
-  --sunny-yellow: #ffc20e;
   --cool-gray: #7f7f7f;
   --light-teal: #6fbfb2;
   --dark-gray: #4c4c4c;
@@ -18,21 +25,14 @@
 
 @media (min-width: 800px){
   :root{
-    --fs-h1:4.5;
-    --fs-h2: 3.7rem;
+    --fs-h1: 4.5rem;
+    --fs-h2: 4rem;
     --fs-h3: 1.5rem;
-    --fs-body: 1.125rem
+    --fs-body: 1.125rem;
   }
 }
 
 /* General Styles*/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
- 
-}
 
 html {
   height: 100%;
@@ -42,7 +42,7 @@ body {
   background-color: var(--white);  
   margin: 0;
   font-family: var(--primary-font);
-  font-size: var(--fs-body);
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -54,8 +54,9 @@ img {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 5rem 2rem;
 }
+
 /* Header section styles */
 .header {
   display: flex;
@@ -63,12 +64,12 @@ section {
   align-items: center;
   font-family: var(--primary-font);
   background-color: var(--light-teal);
-  color: #ffffff; 
+  color: var(--white); 
   padding: 10px;
 }
 /* H1 styles in header section */
 .header h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 1rem
   ;
 }
@@ -77,7 +78,6 @@ section {
 /* Change div to navigation bar (nav) in header section */
 .navbar-links {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
 }
 /* Styles for the unordered list in the nav in the header section */
 .navbar-links ul {
@@ -92,11 +92,11 @@ section {
 }
 /* Styles for the links */
 .navbar-links li a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   padding: 1rem;
   display: block;
-  font-size: var(--fs-h3);
+  font-size: 2rem;
 }
 /* Styles for the paragraphs */
 .navbar-links li:hover {
@@ -110,8 +110,6 @@ section {
   background-size: cover;
   background-position: center;
 }
-
-
 
 /*Topography*/
 
@@ -130,9 +128,17 @@ h1 {font-family: var(--fs-h1);}
 h2 {font-family: var(--fs-h2);}
 h3 {font-family: var(--fs-h3);}
 
+.section__title {
+  margin-bottom: .50em;
+  font-size: var(--fs-h2);
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
 
 
-  
 .header {
       flex-direction: column;
       align-items: center;
@@ -140,6 +146,7 @@ h3 {font-family: var(--fs-h3);}
 .header h1 {
       margin-bottom: 1rem;
   }
+  
 /*About Me styles*/
 
 .about-me {
@@ -150,7 +157,7 @@ h3 {font-family: var(--fs-h3);}
 @media (min-width: 600px) {
   .about-me {
       display: grid;
-      grid-template-columns: 1fr 200px;
+      grid-template-columns: 1fr 300px;
       grid-template-areas: 
           "title img"
           "subtitle img"
@@ -175,7 +182,7 @@ h3 {font-family: var(--fs-h3);}
   .about-me__img {
       grid-area: img;
       position: relative;
-      z-index: 2;
+      z-index: 1;
   }
 }
 
@@ -185,8 +192,13 @@ h3 {font-family: var(--fs-h3);}
   .my-work {
     background-color: var(--light-teal);
     color: var(--white);
-    text-align: center;    
+    text-align: center; 
 }
+
+  .section__title--work {
+    font-size: 3em;
+    padding: .05em;
+  }
 
   .portfolio {
     display: grid;
@@ -213,6 +225,52 @@ h3 {font-family: var(--fs-h3);}
   .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
+}
+
+/*footer and contact styles*/
+
+.contact{
+  background-color: var(--white);
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.section__title--contact{
+  font-size: var(--fs-h2);
+  padding: .05em;
+}
+
+.contact__div{
+  font-size: 1.2em;
+}
+
+.contact__div--email {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+}
+
+.contact__div--email::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contact__div--email:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+footer {
+  text-align: center;
+  
 }
 
 
