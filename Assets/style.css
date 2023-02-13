@@ -195,8 +195,8 @@ h3 {font-family: var(--fs-h3);}
       position: relative;
       /* Set the stacking order of the image */
       z-index: 1;
-      /* Set the maximum width of the image to 150% of its original size */
-      max-width: 150%;  
+      /* Set the maximum width of the image to 100% of its original size */
+      max-width: 100%;  
   }
 }
 
