@@ -62,7 +62,7 @@ section {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h3)
 } 
 
 .navbar-links {
