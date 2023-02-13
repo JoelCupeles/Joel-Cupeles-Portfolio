@@ -21,4 +21,4 @@ This project is licensed under the MIT License.
 3. A contact section where visitors can reach out to him.
 
 ## Links
-![JoelCupelesPortfolioWebPage](C:\Users\joelc\bootcamp\portafolio\Assets\joelcupeles.github.io_Joel-Cupeles-Portfolio_ (1).png
+![JoelCupelesPortfolioWebPage](C:\Users\joelc\bootcamp\portafolio\Assets\joelcupeles.github.io_Joel-Cupeles-Portfolio_ (1).png)
