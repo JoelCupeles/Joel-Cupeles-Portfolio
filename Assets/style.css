@@ -52,7 +52,8 @@ img {
 section {
   padding: 5rem 2rem;
 }
-
+ /*Header & Navbar links styles*/
+ 
 .header  {
   display: flex;
   flex-direction: row;
@@ -112,10 +113,11 @@ section {
 
   .navbar {
     display: none;
+
   }
 }
 
-/*Topography*/
+/*General topography styles*/
 
 .section__subtitle--about {
   background-color: var(--light-teal);
@@ -143,7 +145,7 @@ h3 {font-family: var(--fs-h3);}
 
 }
 
-/*About Me styles*/
+/*About me styles*/
 
 .about-me {
   max-width: 1000px;
@@ -179,11 +181,12 @@ h3 {font-family: var(--fs-h3);}
       grid-area: img;
       position: relative;
       z-index: 1;
+      max-width: 150%;  
   }
 }
 
 
-  /* My Work Section*/
+  /* My Work section styles*/
 
   .my-work {
     background-color: var(--light-teal);
@@ -227,7 +230,7 @@ h3 {font-family: var(--fs-h3);}
     opacity: .5;
 }
 
-/*footer and contact styles*/
+/*Footer and Contact styles*/
 
 .contact{
   background-color: var(--white);
@@ -251,7 +254,7 @@ h3 {font-family: var(--fs-h3);}
 }
 
 .contact__div--email::after{
-  content: "";
+  content: "My email";
   position: absolute;
   width: 100%;
   height: 2px;
