@@ -145,42 +145,57 @@ h3 {font-family: var(--fs-h3);}
 
 }
 
-/*About me styles*/
+/* About Me section styles */
 
 .about-me {
+  /* Set the maximum width of the section to 1000px and center it on the page */
   max-width: 1000px;
   margin: 0 auto;
 }
 
 @media (min-width: 600px) {
   .about-me {
+      /* Use a CSS grid layout for the section */
       display: grid;
+      /* Set the first column to take up 1 fraction unit of the available space and the second column to take up 300px */
       grid-template-columns: 1fr 300px;
+      /* Define the placement of the title, subtitle, and text within the grid */
       grid-template-areas: 
           "title img"
           "subtitle img"
           "text img";
+      /* Set a gap of 2ems between the two columns */
       grid-column-gap: 2em;
   }
   
   .section__title--about {
+      /* Place the title in the "title" area of the grid */
       grid-area: title;
   }
   
   .section__subtitle--about {
+      /* Span the entire width of the grid and place the subtitle in the second row */
       grid-column: 1 / -1;
       grid-row: 2;
+      /* Adjust the position of the subtitle using the "left" property */
       position: relative;
       left: -1em;
+      /* Calculate the width of the subtitle to be 100% of the available space plus 2ems */
       width: calc(100% + 2em);
+      /* Set a padding of 1em on the left side */
       padding-left: 1em;
+      /* Set a padding of 200px plus 4ems on the right side */
       padding-right: calc(200px + 4em);
   }
   
   .about-me__img {
+      /* Place the image in the "img" area of the grid */
       grid-area: img;
+      /* Adjust the position of the image */
       position: relative;
+      /* Set the stacking order of the image */
       z-index: 1;
+      /* Set the maximum width of the image to 150% of its original size */
       max-width: 150%;  
   }
 }
