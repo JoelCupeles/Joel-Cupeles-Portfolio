@@ -16,8 +16,8 @@ The portfolio website was developed by Joel Cupeles.
 This project is licensed under the MIT License.
 
 ## Features
-A section to display personal information about Joel Cupeles
-A portfolio section showcasing his works
-A contact section where visitors can reach out to him.
+1. A section to display personal information about Joel Cupeles
+2. A portfolio section showcasing his works
+3. A contact section where visitors can reach out to him.
 
 ## Links
