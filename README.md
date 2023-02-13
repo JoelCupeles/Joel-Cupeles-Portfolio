@@ -1,7 +1,7 @@
 # Joel Cupeles Portfolio
 
 ## Description
-This project is a portfolio website that showcases the works of Joel Cupeles, a designer and developer. The website is composed of several sections, including an about  section, a section displaying a portfolio of his works, and a contact section where visitors can reach out to Joel.
+This project is a portfolio website that showcases the works of Joel Cupeles (Me), a designer and developer. The website is composed of several sections, including an about  section, a section displaying a portfolio of his works, and a contact section where visitors can reach out to Joel.
 
 ## Installation
 No installation is required for this project.
