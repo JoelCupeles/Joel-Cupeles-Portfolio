@@ -145,7 +145,7 @@ h3 {font-family: var(--fs-h3);}
 
 }
 
-/* About Me section styles */
+/* About me section styles */
 
 .about-me {
   /* Set the maximum width of the section to 1000px and center it on the page */
@@ -203,47 +203,56 @@ h3 {font-family: var(--fs-h3);}
 
   /* My Work section styles*/
 
-  .my-work {
-    background-color: var(--light-teal);
-    color: var(--white);
-    text-align: center; 
-}
-
+  /* Defines the style for the .my-work class. This sets the background color to light teal and the text color to white, and centers the text. */
+.my-work {
+  background-color: var(--light-teal);
+  color: var(--white);
+  text-align: center;
+  }
+  
+  /* Defines the style for the .section__title--work class. This sets the font size using the h2 value in the custom properties and adds padding. */
   .section__title--work {
-    font-size: var(--fs-h2);
-    padding: .05em;
+  font-size: var(--fs-h2);
+  padding: .05em;
   }
-
+  
+  /* Defines the style for the .section__subtitle--work class. This adds a margin to the bottom of the element. */
   .section__subtitle--work {
-    margin-bottom: 1;
+  margin-bottom: 1;
   }
-
+  
+  /* Defines the style for the .portfolio class. This sets the display to grid and sets the grid template columns to repeat and fit within a minimum and maximum size. */
   .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  /* Defines the style for the .portfolio__item class. This sets the background color to light teal and sets the overflow to hidden. */
   .portfolio__item {
-    background: var(--light-teal);
-    overflow: hidden;
-}
-
+  background: var(--light-teal);
+  overflow: hidden;
+  }
+  
+  /* Defines the style for the .portfolio__img class. This sets a transition effect for the transform and opacity properties. */
   .portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-}
-
+  transition:
+  transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+  }
+  
+  /* Defines the style for the .portfolio__item:focus pseudo-class. This sets the position to relative and the z-index to 2. */
   .portfolio__item:focus {
-    position: relative;
-    z-index: 2;
-}
-
+  position: relative;
+  z-index: 2;
+  }
+  
+  /* Defines the style for the .portfolio__img:hover and .portfolio__item:focus .portfolio__img pseudo-classes. 
+  This sets the transform to scale by 1.2 and the opacity to .5 when the mouse is over the image or the item is in focus. */
   .portfolio__img:hover,
   .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
-}
+  transform: scale(1.2);
+  opacity: .5;
+  }
 
 /*Footer and Contact styles*/
 
